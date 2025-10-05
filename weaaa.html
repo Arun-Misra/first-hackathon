@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun ka Weather App Brother!!!</title>
+  <link href="ss.css" rel="stylesheet">
+  <script src="ssd.js" defer></script>
+</head>
+<body style="background: linear-gradient(135deg, #667eea, #764ba2);">
+  <div class="container">
+    <h1>🌤️ARUN's Weather App</h1>
+
+    <!-- Search -->
+    <div class="search-box glass">
+      <input type="text" id="cityInput" placeholder="Enter city" oninput="showSuggestions(this.value)">
+      <button onclick="searchCity()">Search</button>
+      <button onclick="useMyLocation()">📍 Location</button>
+      <div id="suggestions" class="dropdown" style="display:none"></div>
+    </div>
+    <!-- Errors -->
+     <div id="error" class="error"></div>
+    
+    <!-- Current weather -->
+    <div id="currentWeather" class="glass card"></div>
+   </div>
+
+</body>
+</html>
